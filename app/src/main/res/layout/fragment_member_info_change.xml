@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:overScrollMode="never"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_shadow_corner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_name_hint"
+                style="@style/fontRegularTw.greyDoubleDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/name"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/fontRegularTw.GreyDark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_name_hint"
+                app:layout_constraintTop_toBottomOf="@id/tv_name_hint" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_gender_hint"
+                style="@style/fontRegularTw.greyDoubleDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/gender"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/tv_name_hint"
+                app:layout_constraintTop_toBottomOf="@+id/tv_birth" />
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/group_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@id/tv_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_gender_hint">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    style="@style/fontRegularTw.greyDoubleDark"
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/selec_radio_rec_orange"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/male"
+                    android:textColor="@color/selec_orange_grey_hint"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    style="@style/fontRegularTw.greyDoubleDark"
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/selec_radio_rec_orange"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/female"
+                    android:textColor="@color/selec_orange_grey_hint"
+                    android:textSize="13sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_birth_hint"
+                style="@style/fontRegularTw.greyDoubleDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/birth"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/tv_name_hint"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+            <TextView
+                android:id="@+id/tv_birth"
+                style="@style/fontRobotoRegular.GreyDark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/greyHint"
+                android:hint="@string/hint_birthday"
+                app:layout_constraintEnd_toEndOf="@id/tv_name"
+                app:layout_constraintStart_toStartOf="@id/tv_name_hint"
+                app:layout_constraintTop_toBottomOf="@id/tv_birth_hint" />
+
+
+            <!--            <android.support.design.widget.TextInputLayout-->
+            <!--                android:visibility="gone"-->
+            <!--                android:id="@+id/layout_birth"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginBottom="24dp"-->
+            <!--                android:theme="@style/EditTextBlack"-->
+            <!--                app:hintEnabled="false"-->
+            <!--                app:layout_constraintEnd_toEndOf="@id/tv_name"-->
+            <!--                app:layout_constraintStart_toStartOf="@id/tv_name_hint"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/tv_birth_hint">-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/et_birth"-->
+            <!--                    style="@style/fontRegularTw.GreyDark"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:background="@drawable/selec_et_line"-->
+            <!--                    android:hint="@string/hint_birthday"-->
+            <!--                    android:textColorHint="@color/greyHint"-->
+            <!--                    android:imeOptions="actionDone"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:paddingTop="12dp"-->
+            <!--                    android:paddingBottom="10dp"-->
+            <!--                    android:textSize="13sp" />-->
+            <!--            </android.support.design.widget.TextInputLayout>-->
+
+
+
+            <TextView
+                android:id="@+id/tv_phone_hint"
+                style="@style/fontRegularTw.greyDoubleDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/cellphone"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/tv_name_hint"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/fontRobotoRegular.GreyDark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@id/tv_name"
+                app:layout_constraintStart_toStartOf="@id/tv_name_hint"
+                app:layout_constraintTop_toBottomOf="@id/tv_phone_hint" />
+
+            <TextView
+                android:id="@+id/tv_email_hint"
+                style="@style/fontRegularTw.greyDoubleDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/mail"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/tv_name_hint"
+                app:layout_constraintTop_toBottomOf="@+id/layout_address" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_mail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:theme="@style/EditTextBlack"
+                app:hintEnabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tv_name"
+                app:layout_constraintStart_toStartOf="@id/tv_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_email_hint">
+
+                <EditText
+                    android:id="@+id/et_mail"
+                    style="@style/fontRegularTw.GreyDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selec_et_line"
+                    android:hint="@string/hint_email"
+                    android:textColorHint="@color/greyHint"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_receiveaddress_hint"
+                style="@style/fontRegularTw.greyDoubleDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/receiveaddress"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/tv_name_hint"
+                app:layout_constraintTop_toBottomOf="@+id/group_gender" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextBlack"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/tv_name"
+                app:layout_constraintStart_toStartOf="@id/tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/fontRegularTw.GreyDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selec_et_line"
+                    android:hint="@string/hint_address"
+                    android:textColorHint="@color/greyHint"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/layout_mail"
+                app:layout_constraintStart_toStartOf="@+id/tv_receiveaddress_hint"
+                app:layout_constraintTop_toBottomOf="@+id/tv_receiveaddress_hint">
+
+
+                <Spinner
+                    android:id="@+id/spinner_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@drawable/selec_et_line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <Spinner
+                    android:id="@+id/spinner_area"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@drawable/selec_et_line"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_send"
+            style="@style/fontBoldTw.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rec_stroke_orange"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="9dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="9dp"
+            android:text="@string/send"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_info" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            style="@style/fontBoldTw.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rec_stroke_orange"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="9dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="9dp"
+            android:text="@string/delete"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toTopOf="@+id/tv_send" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bg_business"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:padding="20dp"
+        android:background="@drawable/bg_shadow_corner_white_no_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/fontRegularTw.GreyDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:gravity="center"
+                android:text="卡號"
+                android:textColorHint="@color/greyHint"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_visa_icon" />
+
+                <TextView
+                    android:id="@+id/tv_pay_number"
+                    style="@style/fontBoldTw.GreyDoubleDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="* * * * -  * * * * - * * * * - 8888" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView110"
+                style="@style/fontRegularTw.GreyDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:gravity="center"
+                android:text="預設卡片"
+                android:textColorHint="@color/greyHint"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_default_card"
+                    style="@style/fontBoldTw.GreyDoubleDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="非預設支付卡片"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="211dp" />
+
+                <TextView
+                    android:id="@+id/tv_pay_card_default"
+                    style="@style/fontBoldTw.Orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/rec_stroke_orange"
+                    android:fontFamily="@font/noto_sans_tc_regular"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="設為預設"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bg_business" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView101"
+                style="@style/fontRegularTw.GreyDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:gravity="center"
+                android:text="卡片名稱"
+                android:textColorHint="@color/greyHint"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_card_name"
+                    style="@style/fontBoldTw.GreyDoubleDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="國泰世華銀行"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="211dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_pay_card_delete"
+        style="@style/fontBoldTw.Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rec_stroke_orange"
+        android:fontFamily="@font/noto_sans_tc_regular"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingTop="9dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="9dp"
+        android:text="刪除卡片"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_business" />
+
+</android.support.constraint.ConstraintLayout>

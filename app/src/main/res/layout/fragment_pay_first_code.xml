@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/fontBoldTw.GreyDoubleDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="請設定支付密碼"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        style="@style/fontRegularTw.GreyDark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:gravity="center"
+        android:text="此密碼將用來進行付款"
+        android:textColorHint="@color/greyHint"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_shadow_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <EditText
+            android:id="@+id/et_first"
+            style="@style/fontDefaultEn.Black"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@drawable/et_line_select"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColorHint="@color/greyHint"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/et_second"
+            style="@style/fontDefaultEn.Black"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@drawable/et_line_select"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColorHint="@color/greyHint"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/et_first" />
+
+        <EditText
+            android:id="@+id/et_third"
+            style="@style/fontDefaultEn.Black"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@drawable/et_line_select"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColorHint="@color/greyHint"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/et_second"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/et_fourth"
+            style="@style/fontDefaultEn.Black"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@drawable/et_line_select"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColorHint="@color/greyHint"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/et_third"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/et_fifth"
+            style="@style/fontDefaultEn.Black"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@drawable/et_line_select"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColorHint="@color/greyHint"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/et_fourth"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/et_sixth"
+            style="@style/fontDefaultEn.Black"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@drawable/et_line_select"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColorHint="@color/greyHint"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/et_fifth"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

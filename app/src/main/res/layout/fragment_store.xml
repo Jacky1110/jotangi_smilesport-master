@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/btn_chiayi"
+        style="@style/fontBoldTw.White"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_orange_gradient_bar"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/store_chiayi"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_taichung"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_taichung"
+        style="@style/fontBoldTw.Orange"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_grey_bar"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/store_taichung"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_chiayi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_chiayi"
+        app:layout_constraintTop_toTopOf="@+id/btn_chiayi" />
+
+    <View
+        android:id="@+id/view_black"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rec_stroke_while_grey_nocorners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_chiayi" />
+
+    <CheckBox
+        android:id="@+id/cb_store"
+        style="@style/fontRegularTw.GreyDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:button="@drawable/selec_radio_orange"
+        android:checked="true"
+        android:paddingStart="8dp"
+        android:text="@string/store"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_black"
+        app:layout_constraintEnd_toStartOf="@+id/cb_department"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_black" />
+
+    <CheckBox
+        android:id="@+id/cb_department"
+        style="@style/fontRegularTw.GreyDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/selec_radio_orange"
+        android:checked="true"
+        android:paddingStart="8dp"
+        android:text="@string/department"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/cb_store"
+        app:layout_constraintEnd_toStartOf="@+id/cb_sell_center"
+        app:layout_constraintStart_toEndOf="@id/cb_store"
+        app:layout_constraintTop_toTopOf="@id/cb_store" />
+
+    <CheckBox
+        android:id="@+id/cb_sell_center"
+        style="@style/fontRegularTw.GreyDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:button="@drawable/selec_radio_orange"
+        android:checked="true"
+        android:paddingStart="8dp"
+        android:text="@string/sell_center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/cb_store"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cb_department"
+        app:layout_constraintTop_toTopOf="@id/cb_store" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:overScrollMode="never"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_black" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_store_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="view_black,cb_store,cb_department,cb_sell_center" />
+</android.support.constraint.ConstraintLayout>

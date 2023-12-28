@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="-15dp"
+    android:background="@drawable/bg_shadow_corner">
+
+    <TextView
+        android:id="@+id/tv_product_type"
+        style="@style/fontRegularTw.greyDoubleDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        style="@style/fontRobotoRegular.Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_phone_black"
+        android:drawablePadding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tv_product_type"
+        app:layout_constraintTop_toBottomOf="@id/tv_product_type" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/fontRegularTw.Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_map_black"
+        android:drawablePadding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tv_product_type"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone" />
+
+    <TextView
+        android:id="@+id/tv_img"
+        style="@style/fontRegularTw.greyDoubleDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_clock_black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tv_product_type"
+        app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/fontRegularTw.greyDoubleDark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_img"
+        app:layout_constraintTop_toTopOf="@+id/tv_img" />
+</android.support.constraint.ConstraintLayout>

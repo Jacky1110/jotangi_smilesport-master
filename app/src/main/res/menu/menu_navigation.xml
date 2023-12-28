@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        style="@style/fontRegularTw.GreyDark"
+        android:textSize="10sp"
+        android:id="@+id/item_news"
+        android:checked="true"
+        android:icon="@drawable/ic_bar_home"
+        android:title="@string/tab_main" />
+    <item
+        style="@style/fontBoldTw.GreyDoubleDark"
+        android:textSize="10sp"
+        android:id="@+id/item_shop"
+        android:icon="@drawable/ic_bar_prod"
+        android:title="@string/tab_product" />
+    <item
+        style="@style/fontRegularTw.GreyDark"
+        android:textSize="10sp"
+        android:id="@+id/item_member_card"
+        android:icon="@drawable/ic_bar_member"
+        android:title="@string/tab_member_info" />
+    <item
+        style="@style/fontRegularTw.GreyDark"
+        android:textSize="10sp"
+        android:id="@+id/item_location"
+        android:icon="@drawable/ic_bar_location"
+        android:title="@string/tab_location" />
+
+    <item
+        style="@style/fontRegularTw.GreyDark"
+        android:id="@+id/item_member_info"
+        android:icon="@drawable/ic_bar_cart"
+        android:title="@string/tab_shopping_cart" />
+</menu>

@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "553073059088",
+    "firebase_url": "https://smilesportsec-app.firebaseio.com",
+    "project_id": "smilesportsec-app",
+    "storage_bucket": "smilesportsec-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553073059088:android:5773809326d99521",
+        "android_client_info": {
+          "package_name": "com.jotangi.smilesports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553073059088-thhpplqn7alki2gvh6d40no9lj96nmeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvg8MBvXNZCgcxXwvXjxZmRBg1K_EXRxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553073059088-thhpplqn7alki2gvh6d40no9lj96nmeu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "553073059088-6ta8cr2p2gju91i0d84c9fbfhqomgb6q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.doubleservice.smilesport.demos"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553073059088:android:f5e6396f4a4b4ab6",
+        "android_client_info": {
+          "package_name": "com.lafresh.smile2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553073059088-q19r4mu9r9hbjdlag084nsdm8r2r7fhp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lafresh.smile2",
+            "certificate_hash": "24e88691cc3ca3f36c01dea08f7c93e5e86e11ed"
+          }
+        },
+        {
+          "client_id": "553073059088-thhpplqn7alki2gvh6d40no9lj96nmeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvg8MBvXNZCgcxXwvXjxZmRBg1K_EXRxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553073059088-thhpplqn7alki2gvh6d40no9lj96nmeu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "553073059088-6ta8cr2p2gju91i0d84c9fbfhqomgb6q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.doubleservice.smilesport.demos"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553073059088:android:ee9d6bcc9a865bf3",
+        "android_client_info": {
+          "package_name": "com.lafresh.smile2.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553073059088-ecqs9vdhnbqtnk9317vu13ioae6b66a8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lafresh.smile2.debug",
+            "certificate_hash": "24e88691cc3ca3f36c01dea08f7c93e5e86e11ed"
+          }
+        },
+        {
+          "client_id": "553073059088-thhpplqn7alki2gvh6d40no9lj96nmeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvg8MBvXNZCgcxXwvXjxZmRBg1K_EXRxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553073059088-thhpplqn7alki2gvh6d40no9lj96nmeu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "553073059088-6ta8cr2p2gju91i0d84c9fbfhqomgb6q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.doubleservice.smilesport.demos"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

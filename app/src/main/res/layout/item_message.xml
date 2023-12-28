@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/fontBoldTw.GreyDoubleDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_store_name"
+        android:visibility="invisible"
+        style="@style/fontBoldTw.Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/store_name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        style="@style/fontRobotoRegular.GreyHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/ic_clock_gray"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/greyMessage"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_user_name" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        style="@style/fontRegularTw.GreyDark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/greyText"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_message_time"
+        app:layout_constraintStart_toStartOf="@id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_name" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <View
+        android:id="@+id/view_divider_message"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/greyLine"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="@id/tv_user_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_message" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_product_type"-->
+<!--        style="@style/fontDefaultTw.Orange"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:text="@string/store_name"-->
+<!--        app:layout_constraintStart_toStartOf="@id/tv_user_name"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/view_divider_message" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_response_time"-->
+<!--        style="@style/fontBoldTw"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:drawableStart="@drawable/ic_clock_gray"-->
+<!--        android:drawablePadding="4dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="@color/greyMessage"-->
+<!--        android:textSize="13sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/tv_product_type"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/tv_product_type" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_response"-->
+<!--        style="@style/fontBoldTw"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:textColor="@color/greyText"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/tv_response_time"-->
+<!--        app:layout_constraintStart_toStartOf="@id/tv_product_type"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_product_type" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/view_divider_response"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:background="@color/greyLine"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/guideline"-->
+<!--        app:layout_constraintStart_toStartOf="@id/tv_user_name"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_response" />-->
+
+<!--    <android.support.constraint.Group-->
+<!--        android:id="@+id/group_response"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"-->
+<!--        app:constraint_referenced_ids="tv_product_type,tv_response_time,tv_response,view_divider_response" />-->
+</android.support.constraint.ConstraintLayout>
