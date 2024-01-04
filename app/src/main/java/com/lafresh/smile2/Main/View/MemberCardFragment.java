@@ -46,6 +46,7 @@ public class MemberCardFragment extends BaseFragment implements View.OnClickList
     private View viewLineBirth;
     private AnimatorSet rightOutSet, leftInSet;
     private MemberCardContract.Presenter memberCardPresenter;
+    private SharedPreferences pref;
 
 
     public static MemberCardFragment getInstance() {
@@ -162,6 +163,10 @@ public class MemberCardFragment extends BaseFragment implements View.OnClickList
 //        imgBgCardBack.setImageResource(user.isVipUser() ? R.drawable.bg_vip : R.drawable.bg_normal);
 //        imgBgCardFront.setImageResource(user.isVipUser() ? R.drawable.bg_vip : R.drawable.bg_normal);
 
+        pref = requireActivity().getSharedPreferences("loginInfo", MODE_PRIVATE);
+        MemberBean.member_id = pref.getString("member_id", "");
+        MemberBean.staff_quota = pref.getString("staff_quota", "");
+        MemberBean.staff_mobile = pref.getString("staff_mobile", "");
 
         Log.d(TAG, "MemberBean.staff_quota: " + MemberBean.staff_quota);
         if (user.getGroup() != null) {
